@@ -72,7 +72,7 @@ class BatchIterator(object):
                 #csv_data = pd.read_csv(train_path)
                 
                 # id数据对训练在训练过程中没用，使用None指定其对应的field 
-                fields = [("id", None), ("phrase", TEXT), ("coarse", LABEL)]  
+                fields = [("id", None), ("phrase", TEXT), ("sentiment", None), ("coarse", LABEL)]  
                 #examples = []
                 
                 train, valid = data.TabularDataset.splits(
